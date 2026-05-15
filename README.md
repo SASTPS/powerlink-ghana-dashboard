@@ -33,3 +33,7 @@ All values are simulated for student challenge demonstration purposes and are no
 ## How to Use
 
 Open `index.html` in a browser, upload the files to Replit, or publish the repository using GitHub Pages.
+
+## Design Style
+
+This version uses Trinity-inspired navy and gold styling.
