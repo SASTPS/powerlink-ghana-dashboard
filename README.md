@@ -1,39 +1,79 @@
-# PowerLink Ghana 2050 Impact Dashboard
+# PowerLink Ghana 2050 Dashboard
 
-**Team:** TechnoSaints Nexus  
-**Project:** PowerLink Ghana 2050  
-**Artifact Type:** Interactive standalone webpage / code prototype
+## Overview
 
-## Project Summary
+PowerLink Ghana 2050 is a strategic energy planning concept developed by **TechnoSaints: Nexus** for the Siemens Energy **Girls With Energy Challenge**.
 
-PowerLink Ghana 2050 is a student-designed scenario for a hybrid agri-energy and circular economy hub in Ghana.
+The project explores how renewable energy, energy storage, smart monitoring, and community-centered planning can improve quality of life in underserved regions of Ghana while supporting long-term economic development and sustainability.
 
-The concept combines renewable energy, battery storage, flexible backup power, future grid integration, productive agriculture, circular waste-to-value systems, community training, and impact tracking.
+This dashboard serves as a visual decision-support tool that tracks key performance indicators, project readiness, and community impact measures.
 
-## Dashboard Features
+## Project Vision
 
-The dashboard includes:
-- Energy status
-- Agriculture impact calculator
-- Circular economy impact calculator
-- Climate impact calculator
-- Community benefit tracker
-- $500M budget snapshot
+Reliable energy is more than electricity.
 
-## Circular Economy Layer
+It enables improved healthcare delivery, expanded educational opportunities, reliable water access, economic growth, entrepreneurship, and greater community resilience.
 
-The dashboard shows how agricultural and organic waste can become value:
+## KPI Framework
 
-Ghana Farms + Markets → Cocoa/Crop Residues + Organic Waste → Sorting + Collection → Compost/Biochar + Biogas → Farms + Backup Energy → Community Benefit
+The dashboard is organized around six primary KPI categories:
 
-## Important Note
+1. **Energy Reliability**  
+   Measures system uptime, outage hours avoided, battery autonomy, and critical loads served.
 
-All values are simulated for student challenge demonstration purposes and are not actual project data.
+2. **Community Impact**  
+   Measures households served, healthcare support, education support, and water access improvements.
 
-## How to Use
+3. **Safety & Resilience**  
+   Measures fault events, inspection completion, protection system status, and resilience under real operating conditions.
 
-Open `index.html` in a browser, upload the files to Replit, or publish the repository using GitHub Pages.
+4. **Cost & Financial Viability**  
+   Measures capital cost, operating cost, cost per kilowatt-hour, and cost per beneficiary.
 
-## Design Style
+5. **Environmental and SDG Impact**  
+   Measures carbon emissions avoided, renewable energy utilization, fuel displacement, and SDG alignment.
 
-This version uses Trinity-inspired navy and gold styling.
+6. **Implementation Readiness**  
+   Measures site readiness, stakeholder engagement, training completion, and maintenance planning.
+
+## Sustainable Development Goals
+
+The project supports:
+
+- SDG 3: Good Health and Well-Being
+- SDG 4: Quality Education
+- SDG 6: Clean Water and Sanitation
+- SDG 7: Affordable and Clean Energy
+- SDG 8: Decent Work and Economic Growth
+- SDG 9: Industry, Innovation and Infrastructure
+- SDG 13: Climate Action
+- SDG 17: Partnerships for the Goals
+
+## Technology Concepts
+
+The proposed solution may incorporate:
+
+- Solar photovoltaic generation
+- Battery energy storage systems
+- Smart monitoring and telemetry
+- Community-scale microgrid concepts
+- Data-driven decision support
+- Performance dashboards and KPI tracking
+
+## Educational Purpose
+
+This project was developed as part of a student engineering and energy innovation challenge focused on systems thinking, data-driven decision making, sustainable energy planning, stakeholder analysis, and community-centered design.
+
+## Team
+
+**TechnoSaints: Nexus**  
+Girls With Energy Challenge Team  
+Trinity Preparatory School
+
+## Live Dashboard
+
+https://sastps.github.io/powerlink-ghana-dashboard/
+
+---
+
+*If we cannot measure it, we cannot prove it worked — or improve it.*
