@@ -3,155 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PowerLink Ghana 2050 | TechnoSaints Nexus</title>
+  <title>PowerLink Ghana 2050 Dashboard</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="hero">
-    <p class="eyebrow">Girls with Energy Challenge Prototype</p>
-    <h1>PowerLink Ghana 2050</h1>
-    <h2>by TechnoSaints Nexus</h2>
-    <p>A hybrid agri-energy and circular economy dashboard for reliability, agriculture, climate, finance, and community impact.</p>
+    <div>
+      <p class="eyebrow">Girls With Energy Challenge</p>
+      <h1>PowerLink Ghana 2050</h1>
+      <p class="tagline">If we cannot measure it, we cannot prove it worked — or improve it.</p>
+    </div>
   </header>
 
-  <main class="app">
-    <section class="summary">
-      <h2>Dashboard Purpose</h2>
-      <p>PowerLink Ghana 2050 is a student-designed scenario for a hybrid energy hub in Ghana. The system combines renewable generation, battery storage, flexible backup power, future grid integration, productive agriculture, circular waste-to-value systems, and community training.</p>
-    </section>
-
-    <nav class="tabs">
-      <button class="tab active" data-tab="overview">Overview</button>
-      <button class="tab" data-tab="energy">Energy</button>
-      <button class="tab" data-tab="agriculture">Agriculture</button>
-      <button class="tab" data-tab="circularity">Circularity</button>
-      <button class="tab" data-tab="climate">Climate</button>
-      <button class="tab" data-tab="community">Community</button>
-      <button class="tab" data-tab="budget">Budget</button>
-    </nav>
-
-    <section id="overview" class="panel active">
-      <h2>Hybrid energy + agriculture + circular economy</h2>
-      <p>This dashboard helps explain how PowerLink Ghana could improve reliability, affordability, equity, climate impact, health/safety, and long-term resilience.</p>
-      <div class="cards">
-        <article><h3>Hybrid Energy Hub</h3><strong>Solar + Storage</strong><p>Renewables provide primary power while batteries and flexible backup support critical loads.</p></article>
-        <article><h3>Productive Agriculture</h3><strong>Cold Chain</strong><p>Reliable power supports crop storage, processing, irrigation, water, schools, and clinics.</p></article>
-        <article><h3>Circular Economy</h3><strong>Waste → Value</strong><p>Organic and crop waste can become compost, biochar, biogas, fertilizer savings, and local jobs.</p></article>
-        <article><h3>Community Capacity</h3><strong>$50M</strong><p>At least 10% of the $500M budget is dedicated to training and community benefits.</p></article>
+  <main>
+    <section class="summary-grid">
+      <div class="summary-card">
+        <span>Target Region</span>
+        <strong>Northern Ghana</strong>
+        <p>Tamale-centered resilience and productive-use energy strategy.</p>
       </div>
-      <div class="flowbox">
-        <h3>Simple System Diagram</h3>
-        <div class="flow"><span>Solar + Backup</span><span>Battery Storage</span><span>Smart Controls</span><span>Farms + Schools + Clinics</span><span>Measured Impact</span></div>
+      <div class="summary-card">
+        <span>Primary Goal</span>
+        <strong>Reliable Clean Power</strong>
+        <p>Solar + storage + smart monitoring for critical community loads.</p>
+      </div>
+      <div class="summary-card">
+        <span>Impact Areas</span>
+        <strong>Health • Water • Education • Enterprise</strong>
+        <p>Energy access tied to measurable community outcomes.</p>
+      </div>
+      <div class="summary-card">
+        <span>Readiness Lens</span>
+        <strong>Fundable • Safe • Scalable</strong>
+        <p>Designed for real deployment, monitoring, and long-term maintenance.</p>
       </div>
     </section>
 
-    <section id="energy" class="panel">
-      <h2>Energy System Status</h2>
-      <p>The proposed system prioritizes productive agriculture and critical community services during grid outages or harvest-season demand peaks.</p>
-      <div class="cards">
-        <article><h3>Solar Generation</h3><strong>120 MWh/mo</strong><p>Simulated monthly renewable generation.</p></article>
-        <article><h3>Battery Reserve</h3><strong class="good">78%</strong><p>Reserve capacity available for critical loads.</p></article>
-        <article><h3>Flexible Backup</h3><strong>Ready</strong><p>Backup power supports clinics, cold storage, water, and processing.</p></article>
-        <article><h3>Grid Connection</h3><strong class="warn">Future-Ready</strong><p>Designed for local grid support and future regional integration.</p></article>
-      </div>
+    <section class="section-heading">
+      <p class="eyebrow">SMART KPI Framework</p>
+      <h2>Six Metrics That Prove the Solution Works</h2>
     </section>
 
-    <section id="agriculture" class="panel">
-      <h2>Agriculture Impact Calculator</h2>
-      <p>Reliable power can help farmers protect crop value through cold storage, drying, processing, irrigation, and better market timing.</p>
-      <div class="calc">
-        <div class="inputs">
-          <label>Farmers served<input type="number" id="farmers" value="500" min="0"></label>
-          <label>Average crop value per farmer per year ($)<input type="number" id="cropValue" value="1200" min="0"></label>
-          <label>Estimated crop loss reduction (%)<input type="number" id="lossReduction" value="20" min="0" max="100"></label>
-          <button onclick="calculateAgriculture()">Update Agriculture Impact</button>
-        </div>
-        <div class="cards two">
-          <article><h3>Crop Value Protected</h3><strong id="cropProtected">$120,000</strong></article>
-          <article><h3>Farmers Served</h3><strong id="farmersServed">500</strong></article>
-        </div>
+    <section id="kpiGrid" class="kpi-grid"></section>
+
+    <section class="dashboard-panel">
+      <div>
+        <p class="eyebrow">Implementation Dashboard</p>
+        <h2>Project Status Snapshot</h2>
       </div>
+      <div id="statusGrid" class="status-grid"></div>
     </section>
 
-    <section id="circularity" class="panel">
-      <h2>Circular Economy Impact</h2>
-      <p>In a circular economy, waste is not the end of the process. It becomes an input for something useful.</p>
-      <div class="flowbox">
-        <h3>How waste becomes value</h3>
-        <div class="flow circular"><span>Ghana Farms + Markets</span><span>Cocoa/Crop Residues + Organic Waste</span><span>Sorting + Collection</span><span>Compost/Biochar + Biogas</span><span>Farms + Backup Energy</span><span>Community Benefit</span></div>
-      </div>
-      <div class="context">
-        <h3>Real-World Ghana Signals</h3>
-        <ul>
-          <li>Ghana already has related waste-to-energy and circular bioeconomy activity.</li>
-          <li>Organic waste can be converted into biogas, electricity, and fertilizer.</li>
-          <li>Cocoa pod husks, crop residues, and market waste can support compost, biochar, or biogas pathways.</li>
-          <li>Ghana’s carbon market and Article 6 activity create a stronger climate-finance context.</li>
-        </ul>
-      </div>
-      <div class="calc">
-        <div class="inputs">
-          <label>Waste collected per month (tons)<input type="number" id="wasteTons" value="80" min="0"></label>
-          <label>Percent converted to compost/biochar (%)<input type="number" id="compostRate" value="65" min="0" max="100"></label>
-          <label>Percent used for biogas potential (%)<input type="number" id="biogasRate" value="20" min="0" max="100"></label>
-          <button onclick="calculateCircularity()">Update Circular Impact</button>
-        </div>
-        <div class="cards three">
-          <article><h3>Waste Diverted Annually</h3><strong id="wasteDiverted">960 tons</strong></article>
-          <article><h3>Compost/Biochar Produced</h3><strong id="compostOutput">624 tons</strong></article>
-          <article><h3>Biogas Feedstock Potential</h3><strong id="biogasFeedstock">192 tons</strong></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="climate" class="panel">
-      <h2>Climate Impact Calculator</h2>
-      <p>The climate case includes diesel avoided, methane avoided, fertilizer savings, and lower emissions from more reliable low-carbon energy.</p>
-      <div class="calc">
-        <div class="inputs">
-          <label>Diesel avoided per month (gallons)<input type="number" id="dieselGallons" value="5000" min="0"></label>
-          <label>CO₂ per gallon of diesel avoided (kg)<input type="number" id="co2PerGallon" value="10.21" min="0" step="0.01"></label>
-          <label>Methane/waste reduction estimate (tons CO₂e/year)<input type="number" id="methaneAvoided" value="90" min="0"></label>
-          <button onclick="calculateClimate()">Update Climate Impact</button>
-        </div>
-        <div class="cards two">
-          <article><h3>Annual CO₂e Avoided</h3><strong id="co2Avoided">703 tons</strong></article>
-          <article><h3>Fertilizer Savings</h3><strong>$75,000/yr</strong></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="community" class="panel">
-      <h2>Community Benefit Tracker</h2>
-      <p>The project prioritizes rural farmers, women-led processing groups, students, clinics, youth trainees, and local operators.</p>
-      <div class="cards">
-        <article><h3>Schools Powered</h3><strong>4</strong><p>Reliable electricity for lighting, devices, and learning.</p></article>
-        <article><h3>Clinics Supported</h3><strong>2</strong><p>Power for refrigeration, lighting, and essential health services.</p></article>
-        <article><h3>Energy Technicians</h3><strong>30</strong><p>Local energy stewards trained in monitoring and maintenance.</p></article>
-        <article><h3>Women/Youth Participants</h3><strong>120</strong><p>Training and cooperative participation for local ownership.</p></article>
-      </div>
-      <div class="context"><h3>Circular Economy Roles</h3><p>Waste collection teams, compost/biochar operators, biogas safety monitors, cooperative managers, and youth energy/circular-economy trainees.</p></div>
-    </section>
-
-    <section id="budget" class="panel">
-      <h2>$500M Budget Snapshot</h2>
-      <p>This budget model invests in technology, community systems, training, cybersecurity, circular economy infrastructure, and long-term sustainability.</p>
-      <div class="budget">
-        <div><span>Renewable Generation</span><b>$100M</b></div>
-        <div><span>Battery Storage</span><b>$85M</b></div>
-        <div><span>Flexible Backup Power</span><b>$55M</b></div>
-        <div><span>Grid / Microgrid Integration</span><b>$75M</b></div>
-        <div><span>Agriculture + Community Systems</span><b>$60M</b></div>
-        <div><span>Circular Economy Systems</span><b>$35M</b></div>
-        <div><span>Digital Monitoring + Cybersecurity</span><b>$30M</b></div>
-        <div><span>Community Benefits</span><b>$50M</b></div>
-        <div><span>Permits + Contingency</span><b>$10M</b></div>
-      </div>
-      <p class="note">Sample values are simulated for student challenge demonstration purposes and are not actual project data.</p>
+    <section class="sdg-section">
+      <p class="eyebrow">Development Alignment</p>
+      <h2>SDG Impact Map</h2>
+      <div id="sdgGrid" class="sdg-grid"></div>
     </section>
   </main>
 
-  <footer>PowerLink Ghana 2050 | TechnoSaints Nexus | Interactive Student Dashboard Prototype</footer>
+  <footer>
+    <p>PowerLink Ghana 2050 | TechnoSaints: Nexus</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
