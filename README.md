@@ -77,3 +77,4 @@ https://sastps.github.io/powerlink-ghana-dashboard/
 ---
 
 *If we cannot measure it, we cannot prove it worked — or improve it.*
+Deployment refresh: July 2026
